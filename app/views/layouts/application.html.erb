@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style type="text/css">
+      .turbolinks-prgress-bar {
+        position:fixed;
+        display:block;
+        top:0;
+        left:0;
+        hegiht: 3px;
+        background:#0076ff;
+        z-index: 9999;
+        transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+        transform: translate3d(0,0,0);
+      }
+    </style>
     <title>Bookers</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
