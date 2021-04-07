@@ -1,3 +1,10 @@
+<h1>Edit</h1>
+<% if @book.errors.any? %>
+  <%= @book.errors.count %> errors prohibited this book from being saved:
+  <% @book.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
  <%= form_with model:@book, local:true do |f| %>
     <div>
       <lavel for="title">Title</lavel><br />
